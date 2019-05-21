@@ -1,0 +1,11 @@
+.slide { width: 90%; margin-left: auto; margin-right: auto; position: relative; }
+
+.slide__img { position: absolute; top: 0; left: 0; width: 100%; padding-bottom: 56.25%; background-repeat: no-repeat; background-size: cover; }
+
+.slide__img--animate { -webkit-animation: slide 5s forwards; animation: slide 5s forwards; }
+
+@-webkit-keyframes slide { 0%, 85% { -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
+  100% { -webkit-clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%); clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%); } }
+
+@keyframes slide { 0%, 85% { -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
+  100% { -webkit-clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%); clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%); } }

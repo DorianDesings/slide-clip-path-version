@@ -1,0 +1,29 @@
+.slide{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    
+    &__img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        //CODIGO NUEVO
+        padding-bottom: 56.25%;
+        background-repeat: no-repeat;
+        background-size: cover;
+         //FIN CODIGO NUEVO
+        &--animate{
+            animation: slide 5s forwards;
+            @keyframes slide {
+                0%,85%{
+                    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%)
+                }
+                100%{
+                    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%)
+                }
+            }
+        }
+    }
+}
